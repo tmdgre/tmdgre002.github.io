@@ -1,0 +1,116 @@
+{
+  "name": "qwerty-learner",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@floating-ui/react": "^0.19.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@headlessui/react": "^0.2.0",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^10.4.13",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
+    "eslint": "^7.18.0",
+    "howler": "^2.2.3",
+    "lodash": "^4.17.20",
+    "mixpanel-browser": "^2.45.0",
+    "postcss": "^8.4.21",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.1",
+    "react-hotkeys-hook": "^3.0.3",
+    "react-router-dom": "^5.2.0",
+    "react-timer-hook": "^2.0.7",
+    "react-use": "^17.1.0",
+    "source-map-explorer": "^2.5.2",
+    "swr": "^0.4.1",
+    "typescript": "^4.0.3",
+    "use-sound": "^4.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "cross-env CI=false vite build --base=./",
+    "test": "echo \"No tests\"",
+    "lint": "eslint .",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "react",
+      "react-hooks",
+      "prettier"
+    ],
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended"
+    ],
+    "ignorePatterns": [
+      "build/*"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "prettier/prettier": "error"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/howler": "^2.2.3",
+    "@types/jest": "^26.0.15",
+    "@types/lodash": "^4.14.168",
+    "@types/mixpanel-browser": "^2.38.1",
+    "@types/node": "16",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.7",
+    "@vitejs/plugin-react": "^3.1.0",
+    "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.3",
+    "tailwindcss": "^3.2.6",
+    "vite": "^4.1.1",
+    "vite-plugin-svgr": "^2.4.0"
+  }
+}

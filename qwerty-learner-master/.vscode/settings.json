@@ -1,0 +1,9 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "css.validate": false,
+  "files.eol": "\n",
+  "cSpell.words": ["alipay", "esae", "fontawesome", "fortawesome", "headlessui", "romaji", "ukphone", "usphone", "vercel", "wordlist"]
+}
